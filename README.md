@@ -126,16 +126,27 @@ Sample data is included in the [sampleData](sampleData) directory. Additional sa
 
 ## Upload results
 
-* Create a scan.info file containing a single line as follows:  
-  `engineType=SAMPLE_ALTERNATIVE`
-* Create a zip file containing the following:
+As a 3<sup>rd</sup>-party results zip bundle:
+
+* Generate a scan.info file containing a single line as follows:  
+`engineType=SAMPLE_ALTERNATIVE`
+* Generate a zip file containing the following:
 	* The scan.info file generated in the previous step
 	* The JSON file containing scan results
 * Upload the zip file generated in the previous step to SSC
-	* Using the SSC web interface or any SSC client like FortifyClient
-	* In the SSC web interface, you do not need to enable the `3rd party results` checkbox; SSC will automatically determine the engine type based on the scan.info file included in the zip file
+	* Using any SSC client, for example FortifyClient or Maven plugin
+	* Or using the SSC web interface
 	* Similar to how you would upload an FPR file
-	
+
+As raw scan results:  
+
+* Navigate to the Artifacts tab of your application version
+* Click the `UPLOAD` button
+* Click the `ADD FILES` button, and select the JSON file to upload
+* Enable the `3rd party results` check box
+* Select the `SAMPLE_ALTERNATIVE` type
+
+*Note that uploading raw scan results is only supported for manual uploads through the SSC web interface, and this functionality was removed in SSC 20.2 so no longer available in recent SSC versions. Please submit a feature request if you'd like to see this easier process for ad-hoc uploading of 3<sup>rd</sup>-party results restored, referencing Octane id #448174.*
 
 
 
