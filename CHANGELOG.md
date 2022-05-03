@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/fortify-ps/fortify-ssc-parser-sample/compare/v1.0.1...v1.0.2) (2022-05-03)
+
+
+### Bug Fixes
+
+* Add missing changelog entry in previous release ([16b6a3b](https://www.github.com/fortify-ps/fortify-ssc-parser-sample/commit/16b6a3ba34a36742ac22a2f7b84a469362fedec7))
+* Update (potentially vulnerable) dependency versions ([a6ee6d7](https://www.github.com/fortify-ps/fortify-ssc-parser-sample/commit/a6ee6d70d9a1e21a48d54ba04dc46aa287fddece))
+
 ### [1.0.1](https://www.github.com/fortify-ps/fortify-ssc-parser-sample/compare/v1.0.0...v1.0.1) (2022-05-03)
 
 
