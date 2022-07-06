@@ -22,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.example.ssc.parser.sample.alternative.domain;
+package com.fortify.ssc.parser.gitlabdependencyscanning.domain;
 
 import java.util.Date;
 

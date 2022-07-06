@@ -1,20 +1,20 @@
-package com.example.ssc.parser.sample.alternative;
+package com.fortify.ssc.parser.gitlabdependencyscanning;
 
 import java.io.IOException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.example.ssc.parser.sample.alternative.parser.ScanParser;
-import com.example.ssc.parser.sample.alternative.parser.VulnerabilitiesParser;
+import com.fortify.ssc.parser.gitlabdependencyscanning.parser.ScanParser;
+import com.fortify.ssc.parser.gitlabdependencyscanning.parser.VulnerabilitiesParser;
 import com.fortify.plugin.api.ScanBuilder;
 import com.fortify.plugin.api.ScanData;
 import com.fortify.plugin.api.ScanParsingException;
 import com.fortify.plugin.api.VulnerabilityHandler;
 import com.fortify.plugin.spi.ParserPlugin;
 
-public class AlternativeSampleParserPlugin implements ParserPlugin<CustomVulnAttribute> {
-    private static final Logger LOG = LoggerFactory.getLogger(AlternativeSampleParserPlugin.class);
+public class GitLabDependencyScanningParserPlugin implements ParserPlugin<CustomVulnAttribute> {
+    private static final Logger LOG = LoggerFactory.getLogger(GitLabDependencyScanningParserPlugin.class);
 
     @Override
     public void start() throws Exception {

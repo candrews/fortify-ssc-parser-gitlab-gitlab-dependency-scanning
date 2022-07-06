@@ -22,76 +22,21 @@
 --></x-tag-style>
 </x-tag-head>
 
-# Fortify SSC Sample Parser Plugin
+# Fortify SSC Parser Plugin for GitLab Dependency Scanning
 
 ## Introduction
 
-This project provides an alternative implementation for the Fortify SSC sample
-parser provided at https://github.com/fortify/sample-parser.
+This Fortify SSC parser plugin allows for importing scan results produced by GitLab Dependency Scanning.
 
 ### Related Links
 
-* **Downloads**: https://github.com/fortify-ps/fortify-ssc-parser-sample/releases
+* **Downloads**: https://github.com/fortify-ps/fortify-ssc-parser-gitlab-dependency-scanning/releases
     * _Development releases may be unstable or non-functional. The `*-thirdparty.zip` file is for informational purposes only and does not need to be downloaded._
 * **Sample input files**: [sampleData](sampleData)
-* **GitHub**: https://github.com/fortify-ps/fortify-ssc-parser-sample
-* **Automated builds**: https://github.com/fortify-ps/fortify-ssc-parser-sample/actions
-* **Original sample parser**: https://github.com/fortify/sample-parser
-
-## Comparison with original sample parser
-
-Compared to the original sample parser:
-
-* This project only provides parser functionality; it currently doesn't include
-  functionality for generating sample parser input.
-* This alternative implementation provides better separation of concerns:
-    * The main parser plugin class just provides very simple implementations for 
-     the parser SPI methods; actual parsing is done by dedicated parser classes.
-    * Functionality for technical JSON parsing (looking for start and end of objects/arrays) is provided by the [fortify-ssc-parser-util](https://github.com/fortify-ps/fortify-ssc-parser-util) library
-    * Parser implementations define handlers or use domain objects containing @JsonPropery-annotated fields for handling specific JSON elements.
-* This implementation includes some incomplete unit tests. These unit tests will
-  try to parse a sample input file, failing if there are any parsing exceptions.
-  Information about the parsed data is sent to stderr, but the unit tests don't
-  test whether the actual data was parsed correctly.
-  
-## Developing your own parser plugin
-
-The official documentation for developing SSC parser plugins is available at
-https://github.com/fortify/plugin-api, and the official sample plugin implementation is available at https://github.com/fortify/sample-parser.
-
-If you want to use this alternative example as a starting point for developing your own custom SSC parser plugin:
-
-* Generic changes:
-    * Update `settings.gradle` according to the name of your project.
-    * Rename packages/classes according to the type of data that you
-      will be parsing.
-    * Update `src/main/resources/images` with your plugin icon and logo.
-    * Update `src/main/resources/resources` with relevant message properties.
-    * Update `src/main/resources/viewtemplate` with the SSC view template
-      used to display issue details.
-    * Update `src/main/resources/plugin.xml` with your plugin name, 
-      icon/logo, message property files, view template, ...
-    * Update CustomVulnAttribute.java to reflect the custom issue
-      attributes that can be reported by your plugin.
-    * Implement the actual functionality for parsing your data 
-      (see below).
-    * Update the main parser plugin class to invoke your actual
-      parser implementations, and log the appropriate start/stop
-      messages.
-    * Add one or more sample input files in `sampleData`,
-      and create/update corresponding JUnit tests (see 
-      AlternativeSampleParserPluginTest.java).
-    * Update `src/main/resources/plugin.xml` based on all changes
-      above and other plugin configuration.
-    * Update `src/main/resources/META-INF/services/com.fortify.plugin.spi.ParserPlugin`
-      to point to your renamed parser plugin class.
-    * If you need any additional/other dependencies for your plugin,
-      update `build.gradle`.
-     
-* If you need to parse JSON data, use the [fortify-ssc-parser-util-json](https://github.com/fortify-ps/fortify-ssc-parser-util/tree/master/fortify-ssc-parser-util-json) library
-* If you need to parse XML data, use the [fortify-ssc-parser-util-xml](https://github.com/fortify-ps/fortify-ssc-parser-util/tree/master/fortify-ssc-parser-util-xml) library
-* If you need to parse other types of data, consider developing a similar library and contributing this back to the [fortify-ssc-parser-util](https://github.com/fortify-ps/fortify-ssc-parser-util) project
-
+* **GitHub**: https://github.com/fortify-ps/fortify-ssc-parser-gitlab-dependency-scanning
+* **Automated builds**: https://github.com/fortify-ps/fortify-ssc-parser-gitlab-dependency-scanning/actions
+* **GitLab Dependency Scanning**: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/
+* **GitLab Dependency Scanning Report Format JSON**: https://gitlab.com/gitlab-org/security-products/security-report-schemas/-/blob/master/dist/dependency-scanning-report-format.json
 
 ## Plugin Installation
 
@@ -122,14 +67,14 @@ These sections describe how to install, upgrade and uninstall the plugin.
 
 ## Obtain results
 
-Sample data is included in the [sampleData](sampleData) directory. Additional sample data can be obtained using the original sample parser code; see https://github.com/fortify/sample-parser#generating-scan-with-fixed-or-random-data for instructions.
+Please see the GitLab documentation for details on generated dependency scanning reports.
 
 ## Upload results
 
 As a 3<sup>rd</sup>-party results zip bundle:
 
 * Generate a scan.info file containing a single line as follows:  
-`engineType=SAMPLE_ALTERNATIVE`
+`engineType=GITLAB_DEPENDENCY_SCANNING`
 * Generate a zip file containing the following:
 	* The scan.info file generated in the previous step
 	* The JSON file containing scan results
@@ -144,7 +89,7 @@ As raw scan results:
 * Click the `UPLOAD` button
 * Click the `ADD FILES` button, and select the JSON file to upload
 * Enable the `3rd party results` check box
-* Select the `SAMPLE_ALTERNATIVE` type
+* Select the `GITLAB_DEPENDENCY_SCANNING` type
 
 *Note that uploading raw scan results is only supported for manual uploads through the SSC web interface, and this functionality was removed in SSC 20.2 so no longer available in recent SSC versions. Please submit a feature request if you'd like to see this easier process for ad-hoc uploading of 3<sup>rd</sup>-party results restored, referencing Octane id #448174.*
 

@@ -1,4 +1,4 @@
-package com.example.ssc.parser.sample.alternative;
+package com.fortify.ssc.parser.gitlabdependencyscanning;
 
 /**
  * (c) Copyright [2017] Micro Focus or one of its affiliates.

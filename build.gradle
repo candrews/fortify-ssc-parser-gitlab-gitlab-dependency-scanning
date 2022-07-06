@@ -1,5 +1,5 @@
 plugins {
-  id "io.freefair.lombok" version "6.4.3"
+  id "io.freefair.lombok" version "6.5.0.2"
   id 'com.github.jk1.dependency-license-report' version '2.1'
   id "org.kordamp.gradle.markdown" version "2.2.0"
 }
@@ -8,7 +8,7 @@ repositories {
 	mavenCentral()
 }
 
-group 'com.fortify.ssc.parser.sample.alternative'
+group 'com.fortify.ssc.parser.gitlabdependencyscanning'
 ext.getVersion = {
 	def result = project.findProperty('version');
 	return !result || result=='unspecified' ? new Date().format('0.yyyyMMdd.HHmmss') : result;

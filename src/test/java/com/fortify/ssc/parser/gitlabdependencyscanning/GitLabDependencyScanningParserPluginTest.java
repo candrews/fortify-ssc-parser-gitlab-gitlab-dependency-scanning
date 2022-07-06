@@ -22,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.example.ssc.parser.sample.alternative;
+package com.fortify.ssc.parser.gitlabdependencyscanning;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,7 +42,7 @@ import com.fortify.plugin.api.ScanEntry;
 import com.fortify.plugin.api.StaticVulnerabilityBuilder;
 import com.fortify.plugin.api.VulnerabilityHandler;
 
-class AlternativeSampleParserPluginTest {
+class GitLabDependencyScanningParserPluginTest {
 	private static final String[] SAMPLE_FILES = {
 			"fixed-sample-scan.json"
 	};
@@ -73,7 +73,7 @@ class AlternativeSampleParserPluginTest {
 	}
 	
 	private final ScanBuilder scanBuilder = (ScanBuilder) Proxy.newProxyInstance(
-			AlternativeSampleParserPluginTest.class.getClassLoader(), 
+			GitLabDependencyScanningParserPluginTest.class.getClassLoader(), 
 			  new Class[] { ScanBuilder.class }, new InvocationHandler() {
 				
 				@Override
@@ -89,7 +89,7 @@ class AlternativeSampleParserPluginTest {
 		public StaticVulnerabilityBuilder startStaticVulnerability(String instanceId) {
 			System.err.println("startStaticVulnerability: "+instanceId);
 			return (StaticVulnerabilityBuilder) Proxy.newProxyInstance(
-					AlternativeSampleParserPluginTest.class.getClassLoader(), 
+					GitLabDependencyScanningParserPluginTest.class.getClassLoader(), 
 					  new Class[] { StaticVulnerabilityBuilder.class }, new InvocationHandler() {
 						
 						@Override
@@ -105,7 +105,7 @@ class AlternativeSampleParserPluginTest {
 	void testParseScan() throws Exception {
 		for ( String file : SAMPLE_FILES ) {
 			System.err.println("\n\n---- "+file+" - parseScan");
-			new AlternativeSampleParserPlugin().parseScan(getScanData(file), scanBuilder);
+			new GitLabDependencyScanningParserPlugin().parseScan(getScanData(file), scanBuilder);
 			// TODO Check actual output
 		}
 	}
@@ -114,7 +114,7 @@ class AlternativeSampleParserPluginTest {
 	void testParseVulnerabilities() throws Exception {
 		for ( String file : SAMPLE_FILES ) {
 			System.err.println("\n\n---- "+file+" - parseVulnerabilities");
-			new AlternativeSampleParserPlugin().parseVulnerabilities(getScanData(file), vulnerabilityHandler);
+			new GitLabDependencyScanningParserPlugin().parseVulnerabilities(getScanData(file), vulnerabilityHandler);
 			// TODO Check actual output
 		}
 	}

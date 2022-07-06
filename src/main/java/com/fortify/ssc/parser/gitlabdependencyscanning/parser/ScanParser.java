@@ -1,4 +1,4 @@
-package com.example.ssc.parser.sample.alternative.parser;
+package com.fortify.ssc.parser.gitlabdependencyscanning.parser;
 
 import java.io.IOException;
 

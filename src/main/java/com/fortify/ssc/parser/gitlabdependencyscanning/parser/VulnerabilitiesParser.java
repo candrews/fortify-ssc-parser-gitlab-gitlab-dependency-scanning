@@ -1,9 +1,9 @@
-package com.example.ssc.parser.sample.alternative.parser;
+package com.fortify.ssc.parser.gitlabdependencyscanning.parser;
 
 import java.io.IOException;
 
-import com.example.ssc.parser.sample.alternative.CustomVulnAttribute;
-import com.example.ssc.parser.sample.alternative.domain.Finding;
+import com.fortify.ssc.parser.gitlabdependencyscanning.CustomVulnAttribute;
+import com.fortify.ssc.parser.gitlabdependencyscanning.domain.Finding;
 import com.fortify.plugin.api.ScanData;
 import com.fortify.plugin.api.ScanParsingException;
 import com.fortify.plugin.api.StaticVulnerabilityBuilder;
