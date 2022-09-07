@@ -26,7 +26,7 @@
 
 ## Introduction
 
-This Fortify SSC parser plugin allows for importing scan results produced by GitLab Dependency Scanning.
+This Fortify SSC parser plugin allows for importing scan results produced by GitLab Dependency Scanning (also known as Gemnasium).
 
 ### Related Links
 
