@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PluginDescriptor"
         id="com.fortify.ssc.parser.gitlabdependencyscanning" api-version="1.0">
     <plugin-info>
-        <name>GitLab Dependency Scanning parser plugin</name>
+        <name>GitLab Dependency Scanning (Gemnasium) parser plugin</name>
         <version><!--VERSION-->0.0<!--/VERSION--></version>
         <data-version>1</data-version>
         <vendor name="Micro Focus" url="https://www.microfocus.com"/>
