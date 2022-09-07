@@ -1,187 +1,104 @@
 {
-  "engineVersion" : "1.0-SNAPSHOT",
-  "scanDate" : "2017-04-18T23:31:42.136Z",
-  "buildServer" : "server01",
-  "findings" : [ {
-    "uniqueId" : "fda2eaa2-7643-4fc5-809e-3eb6957e1945",
-    "category" : "Cross-site Scripting",
-    "fileName" : "file-fda2eaa2-7643-4fc5-809e-3eb6957e1945/00000001.bin",
-    "vulnerabilityAbstract" : "Cross-site Scripting found in file-fda2eaa2-7643-4fc5-809e-3eb6957e1945/00000001.bin",
-    "lineNumber" : 103,
-    "confidence" : 4.968653,
-    "impact" : 200.69,
-    "priority" : "Critical",
-    "categoryId" : "a101",
-    "customStatus" : "OPEN",
-    "artifact" : "artifact-fda2eaa2-7643-4fc5-809e-3eb6957e1945/00000001.jar",
-    "description" : "Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy. Cross-site scripting carried out on websites accounted for roughly 84% of all security vulnerabilities documented by Symantec as of 2007.[1] Their effect may range from a petty nuisance to a significant security risk, depending on the sensitivity of the data handled by the vulnerable site and the nature of any security mitigation implemented by the site's owner.",
-    "comment" : "This should be fixed",
-    "buildNumber" : "300.3837014436722",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "fda2eaa2-7643-4fc5-809e-3eb6957e1999",
-    "category" : "Cross-site Scripting",
-    "fileName" : "file-fda2eaa2-7643-4fc5-809e-3eb6957e1999/00000021.bin",
-    "vulnerabilityAbstract" : "Cross-site Scripting found in file-fda2eaa2-7643-4fc5-809e-3eb6957e1999/00000021.bin",
-    "lineNumber" : 146,
-    "confidence" : 4.968653,
-    "impact" : 200.69,
-    "priority" : "Critical",
-    "categoryId" : "a101",
-    "customStatus" : "OPEN",
-    "artifact" : "artifact-fda2eaa2-7643-4fc5-809e-3eb6957e1999/00000001.jar",
-    "description" : "Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy. Cross-site scripting carried out on websites accounted for roughly 84% of all security vulnerabilities documented by Symantec as of 2007.[1] Their effect may range from a petty nuisance to a significant security risk, depending on the sensitivity of the data handled by the vulnerable site and the nature of any security mitigation implemented by the site's owner.",
-    "comment" : "This should be fixed",
-    "buildNumber" : "300.3837014436722",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "fda2eaa2-7643-4fc5-809e-3eb6957e1946",
-    "category" : "Cross-site Scripting",
-    "fileName" : "file-fda2eaa2-7643-4fc5-809e-3eb6957e1946/00000011.bin",
-    "vulnerabilityAbstract" : "Cross-site Scripting found in file-fda2eaa2-7643-4fc5-809e-3eb6957e1946/00000011.bin",
-    "lineNumber" : 489,
-    "confidence" : 4.968653,
-    "impact" : 200.69,
-    "priority" : "Critical",
-    "categoryId" : "a101",
-    "customStatus" : "REMEDIATED",
-    "artifact" : "artifact-fda2eaa2-7643-4fc5-809e-3eb6957e1946/00000001.jar",
-    "description" : "Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy. Cross-site scripting carried out on websites accounted for roughly 84% of all security vulnerabilities documented by Symantec as of 2007.[1] Their effect may range from a petty nuisance to a significant security risk, depending on the sensitivity of the data handled by the vulnerable site and the nature of any security mitigation implemented by the site's owner.",
-    "comment" : "fixed in build 303.0001",
-    "buildNumber" : "300.3837014436722",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95fee3",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.bin",
-    "lineNumber" : 8409,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "REMEDIATED",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "fixed in build 300.845200451",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95fe11",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95fe11/00000002.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95fe11/00000002.bin",
-    "lineNumber" : 1001,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "REMEDIATED",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "fixed in build 300.845200451",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95fe12",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95fe12/00000003.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95fe12/00000003.bin",
-    "lineNumber" : 423,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "OPEN",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95ffx5",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95ffx5/00000042.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95ffx5/00000042.bin",
-    "lineNumber" : 8409,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "REMEDIATED",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "fixed in build 300.845200451",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95fe88",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95fe88/00000008.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95fe88/00000008.bin",
-    "lineNumber" : 409,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "NEW",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95feag/00000012.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95f111",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95f111/00000018.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95f111/00000018.bin",
-    "lineNumber" : 22,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "NEW",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95fe88/00000008.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  }, {
-    "uniqueId" : "c834c327-4cee-4420-b1f8-b24bea95fe55",
-    "category" : "SQL Injection",
-    "fileName" : "file-c834c327-4cee-4420-b1f8-b24bea95fe55/00000007.bin",
-    "vulnerabilityAbstract" : "SQL Injection found in file-c834c327-4cee-4420-b1f8-b24bea95fe55/00000007.bin",
-    "lineNumber" : 112,
-    "confidence" : 2.941967,
-    "impact" : 200.696,
-    "priority" : "High",
-    "categoryId" : "c121",
-    "customStatus" : "OPEN",
-    "artifact" : "artifact-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.jar",
-    "description" : "SQL injection is a code injection technique, used to attack data-driven applications, in which nefarious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).[1] SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database.",
-    "comment" : "",
-    "buildNumber" : "300.314668238163",
-    "lastChangeDate" : "2017-04-16T21:31:42.092Z",
-    "artifactBuildDate" : "2017-04-17T22:31:42.092Z",
-    "textBase64" : "RXhhbXBsZSBvZiBhIHRleHQgZW5jb2RlZCBpbiB0aGUgb3JpZ2luYWwgc2NhbiB0byBCYXNlNjQuIApGcm9tIFdpa2lwZWRpYTogCgpDb21wdXRlciBzZWN1cml0eSwgYWxzbyBrbm93biBhcyBjeWJlciBzZWN1cml0eSBvciBJVCBzZWN1cml0eSwgaXMgdGhlIHByb3RlY3Rpb24gb2YgY29tcHV0ZXIgc3lzdGVtcyBmcm9tIHRoZSB0aGVmdCBvciBkYW1hZ2UgdG8gdGhlaXIgaGFyZHdhcmUsIHNvZnR3YXJlIG9yIGluZm9ybWF0aW9uLCBhcyB3ZWxsIGFzIGZyb20gZGlzcnVwdGlvbiBvciBtaXNkaXJlY3Rpb24gb2YgdGhlIHNlcnZpY2VzIHRoZXkgcHJvdmlkZS4gCgpDeWJlciBzZWN1cml0eSBpbmNsdWRlcyBjb250cm9sbGluZyBwaHlzaWNhbCBhY2Nlc3MgdG8gdGhlIGhhcmR3YXJlLCBhcyB3ZWxsIGFzIHByb3RlY3RpbmcgYWdhaW5zdCBoYXJtIHRoYXQgbWF5IGNvbWUgdmlhIG5ldHdvcmsgYWNjZXNzLCBkYXRhIGFuZCBjb2RlIGluamVjdGlvbi4gQWxzbywgZHVlIHRvIG1hbHByYWN0aWNlIGJ5IG9wZXJhdG9ycywgd2hldGhlciBpbnRlbnRpb25hbCwgYWNjaWRlbnRhbCwgSVQgc2VjdXJpdHkgaXMgc3VzY2VwdGlibGUgdG8gYmVpbmcgdHJpY2tlZCBpbnRvIGRldmlhdGluZyBmcm9tIHNlY3VyZSBwcm9jZWR1cmVzIHRocm91Z2ggdmFyaW91cyBtZXRob2RzLgo="
-  } ],
-  "elapsed" : 68
+  "version": "2.0",
+  "vulnerabilities": [
+    {
+      "id": "51e83874-0ff6-4677-a4c5-249060554eae",
+      "category": "dependency_scanning",
+      "name": "Regular Expression Denial of Service",
+      "message": "Regular Expression Denial of Service in debug",
+      "description": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the `o` formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+      "severity": "Unknown",
+      "solution": "Upgrade to latest versions.",
+      "scanner": {
+        "id": "gemnasium",
+        "name": "Gemnasium"
+      },
+      "location": {
+        "file": "yarn.lock",
+        "dependency": {
+          "package": {
+            "name": "debug"
+          },
+          "version": "1.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "gemnasium",
+          "name": "Gemnasium-37283ed4-0380-40d7-ada7-2d994afcc62a",
+          "value": "37283ed4-0380-40d7-ada7-2d994afcc62a",
+          "url": "https://deps.sec.gitlab.com/packages/npm/debug/versions/1.0.5/advisories"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://nodesecurity.io/advisories/534"
+        },
+        {
+          "url": "https://github.com/visionmedia/debug/issues/501"
+        },
+        {
+          "url": "https://github.com/visionmedia/debug/pull/504"
+        }
+      ]
+    },
+    {
+      "id": "5d681b13-e8fa-4668-957e-8d88f932ddc7",
+      "category": "dependency_scanning",
+      "name": "Authentication bypass via incorrect DOM traversal and canonicalization",
+      "message": "Authentication bypass via incorrect DOM traversal and canonicalization in saml2-js",
+      "description": "Some XML DOM traversal and canonicalization APIs may be inconsistent in handling of comments within XML nodes. Incorrect use of these APIs by some SAML libraries results in incorrect parsing of the inner text of XML nodes such that any inner text after the comment is lost prior to cryptographically signing the SAML message. Text after the comment, therefore, has no impact on the signature on the SAML message.\r\n\r\nA remote attacker can modify SAML content for a SAML service provider without invalidating the cryptographic signature, which may allow attackers to bypass primary authentication for the affected SAML service provider.",
+      "severity": "Unknown",
+      "solution": "Upgrade to fixed version.\r\n",
+      "scanner": {
+        "id": "gemnasium",
+        "name": "Gemnasium"
+      },
+      "location": {
+        "file": "yarn.lock",
+        "dependency": {
+          "package": {
+            "name": "saml2-js"
+          },
+          "version": "1.5.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "gemnasium",
+          "name": "Gemnasium-9952e574-7b5b-46fa-a270-aeb694198a98",
+          "value": "9952e574-7b5b-46fa-a270-aeb694198a98",
+          "url": "https://deps.sec.gitlab.com/packages/npm/saml2-js/versions/1.5.0/advisories"
+        },
+        {
+          "type": "cve",
+          "name": "CVE-2017-11429",
+          "value": "CVE-2017-11429",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11429"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/Clever/saml2/commit/3546cb61fd541f219abda364c5b919633609ef3d#diff-af730f9f738de1c9ad87596df3f6de84R279"
+        },
+        {
+          "url": "https://github.com/Clever/saml2/issues/127"
+        },
+        {
+          "url": "https://www.kb.cert.org/vuls/id/475445"
+        }
+      ]
+    }
+  ],
+  "remediations": [
+    {
+      "fixes": [
+        {
+          "id": "5d681b13-e8fa-4668-957e-8d88f932ddc7"
+        }
+      ],
+      "summary": "Upgrade saml2-js",
+      "diff": "ZGlmZiAtLWdpdCBhL...OR0d1ZUc2THh3UT09Cg=="
+    }
+  ]
 }

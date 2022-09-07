@@ -104,7 +104,7 @@ class GitLabDependencyScanningParserPluginTest {
 	@Test
 	void testParseScan() throws Exception {
 		for ( String file : SAMPLE_FILES ) {
-			System.err.println("\n\n---- "+file+" - parseScan");
+			System.err.println("\n\n---- "+ file + " - parseScan");
 			new GitLabDependencyScanningParserPlugin().parseScan(getScanData(file), scanBuilder);
 			// TODO Check actual output
 		}
@@ -113,7 +113,7 @@ class GitLabDependencyScanningParserPluginTest {
 	@Test
 	void testParseVulnerabilities() throws Exception {
 		for ( String file : SAMPLE_FILES ) {
-			System.err.println("\n\n---- "+file+" - parseVulnerabilities");
+			System.err.println("\n\n---- " + file + " - parseVulnerabilities");
 			new GitLabDependencyScanningParserPlugin().parseVulnerabilities(getScanData(file), vulnerabilityHandler);
 			// TODO Check actual output
 		}

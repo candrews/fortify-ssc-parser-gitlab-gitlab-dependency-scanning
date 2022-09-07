@@ -14,16 +14,22 @@ package com.fortify.ssc.parser.gitlabdependencyscanning;
  */
 
 public enum CustomVulnAttribute implements com.fortify.plugin.spi.VulnerabilityAttribute {
-	uniqueId(AttrType.STRING),
-    categoryId(AttrType.STRING),
-    artifact(AttrType.STRING),
-    comment(AttrType.LONG_STRING),
-    description(AttrType.LONG_STRING),
-    buildNumber(AttrType.STRING),
-    customStatus(AttrType.STRING),
-    lastChangeDate(AttrType.DATE),
-    artifactBuildDate(AttrType.DATE),
-    textBase64(AttrType.LONG_STRING),
+	DESCRIPTION(AttrType.LONG_STRING),
+	MESSAGE(AttrType.STRING),
+	NAME(AttrType.STRING),
+	PACKAGE_NAME(AttrType.STRING),
+	PACKAGE_VERSION(AttrType.STRING),
+	DIRECT(AttrType.STRING),
+	FILE(AttrType.STRING),
+	ID(AttrType.STRING),
+	SOLUTION(AttrType.STRING),
+	CONFIDENCE(AttrType.STRING),
+	SCANNER_NAME(AttrType.STRING),
+	SCANNER_ID(AttrType.STRING),
+	IDENTIFIER_NAME(AttrType.STRING),
+	IDENTIFIER_TYPE(AttrType.STRING),
+	IDENTIFIER_URL(AttrType.STRING),
+	IDENTIFIER_URLS(AttrType.LONG_STRING),
     ;
 
     private final AttrType attributeType;

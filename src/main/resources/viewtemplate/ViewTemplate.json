@@ -2,64 +2,46 @@
   [
     {
       "type": "template",
-      "title": "Vulnerability brief summary",
-      "key": "brief",
-      "templateId": "COLLAPSE",
-      "dataType": "string"
-    },
-    {
-      "type": "template",
-      "title": "Custom attributes",
+      "title": "GitLab Dependency Analyzer",
       "templateId": "TITLEBOX",
+      "dataType": "string",
       "items": [
         {
           "type": "template",
-          "title": "Unique ID",
-          "key": "customAttributes.uniqueId",
+          "key": "customAttributes.MESSAGE",
           "templateId": "SIMPLE",
           "dataType": "string"
         },
         {
           "type": "template",
-          "title": "Category ID",
-          "key": "customAttributes.categoryId",
+          "title": "Criticality",
+          "key": "friority",
           "templateId": "SIMPLE",
           "dataType": "string"
         },
         {
           "type": "template",
-          "title": "Custom status",
-          "key": "customAttributes.customStatus",
+          "key": "customAttributes.PACKAGE_NAME",
           "templateId": "SIMPLE",
           "dataType": "string"
         },
         {
           "type": "template",
-          "title": "Artifact name",
-          "key": "customAttributes.artifact",
+          "key": "customAttributes.PACKAGE_VERSION",
           "templateId": "SIMPLE",
           "dataType": "string"
         },
         {
           "type": "template",
-          "title": "Build number",
-          "key": "customAttributes.buildNumber",
+          "key": "customAttributes.DIRECT",
           "templateId": "SIMPLE",
           "dataType": "string"
         },
         {
           "type": "template",
-          "title": "Artifact build date",
-          "key": "customAttributes.artifactBuildDate",
+          "key": "customAttributes.FILE",
           "templateId": "SIMPLE",
-          "dataType": "date"
-        },
-        {
-          "type": "template",
-          "title": "Last change date",
-          "key": "customAttributes.lastChangeDate",
-          "templateId": "SIMPLE",
-          "dataType": "date"
+          "dataType": "string"
         }
       ]
     }
@@ -69,27 +51,6 @@
       "type": "fieldset",
       "htmlClass": "container-spacer-bottom",
       "items": [
-        {
-          "type": "template",
-          "title": "Internal ID",
-          "key": "id",
-          "templateId": "SIMPLE",
-          "dataType": "string"
-        },
-        {
-          "type": "template",
-          "title": "Group/issue name",
-          "key": "issueName",
-          "templateId": "SIMPLE",
-          "dataType": "string"
-        },
-        {
-          "type": "template",
-          "title": "Full file name",
-          "key": "fullFileName",
-          "templateId": "SIMPLE",
-          "dataType": "string"
-        },
         {
           "type": "template",
           "title": "Issue scan status",
@@ -127,19 +88,6 @@
         },
         {
           "type": "template",
-          "title": "Criticality",
-          "key": "friority",
-          "templateId": "SIMPLE",
-          "dataType": "float"
-        },
-        {
-          "type": "template",
-          "key": "primaryTag.tagName",
-          "templateId": "PRIMARYTAG",
-          "dataType": "string"
-        },
-        {
-          "type": "template",
           "title": "Audited",
           "key": "audited",
           "templateId": "SIMPLE",
@@ -151,31 +99,29 @@
   [
     {
       "type": "template",
-      "title": "Custom long text fields",
+      "title": "Issue Information",
       "templateId": "TITLEBOX",
+      "dataType": "string",
       "items": [
+        { 
+          "type": "template",
+          "key": "customAttributes.IDENTIFIER_NAME",
+          "templateId": "SIMPLE",
+          "dataType": "string"
+        },
         {
           "type": "template",
-          "title": "Description",
-          "key": "customAttributes.description",
+          "key": "customAttributes.DESCRIPTION",
           "templateId": "COLLAPSE",
           "dataType": "string"
         },
         {
           "type": "template",
-          "title": "Comment",
-          "key": "customAttributes.comment",
+          "key": "customAttributes.IDENTIFIER_URLS",
           "templateId": "SIMPLE",
           "dataType": "string"
         }
       ]
-    },
-    {
-      "type": "template",
-      "title": "Custom long text (base64 example)",
-      "key": "customAttributes.textBase64",
-      "templateId": "COLLAPSE",
-      "dataType": "string"
     }
   ]
 ]
