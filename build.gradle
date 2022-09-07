@@ -28,6 +28,7 @@ apply from: "${gradleHelpersLocation}/readme2html.gradle"
 
 apply plugin: 'java'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 sourceSets {
     test {
