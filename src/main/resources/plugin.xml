@@ -20,7 +20,7 @@
         </resources>
     </plugin-info>
     <issue-parser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <engine-type>GITLAB_DEPENDENCY_SCANNING</engine-type>
+        <engine-type>GEMNASIUM</engine-type>
         <view-template location="/viewtemplate/ViewTemplate.json">
             <description>Default view template.</description>
         </view-template>
